@@ -18,7 +18,9 @@ export default function NavBar() {
   return !toggle ? (
     <div className="nav-container">
       <div className="logo-container">
-        <Link href="/"></Link>
+        <Link href="/">
+          <a>dd</a>
+        </Link>
       </div>
       {/* <div className="navi-container">
         {this.props.store.user.isAdmin() ? (
@@ -33,19 +35,19 @@ export default function NavBar() {
           <div />
         )} */}
       <Link href="/">
-        <span>Home</span>
+        <a>Home</a>
       </Link>
       <Link href="/notice">
-        <span>Notice</span>
+        <a>Notice</a>
       </Link>
       <Link href="/story">
-        <span>Story</span>
+        <a>Story</a>
       </Link>
       <Link href="/shop">
-        <span>Gallery</span>
+        <a>Gallery</a>
       </Link>
       <Link href="/shop/pagination">
-        <span>Shop</span>
+        <a>Shop</a>
       </Link>
     </div>
   ) : (
